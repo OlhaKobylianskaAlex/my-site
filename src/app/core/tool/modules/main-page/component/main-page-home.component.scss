@@ -1,0 +1,76 @@
+@import "../../../../../app-styles/variables.scss";
+@import "../../../../../app-styles/mixins.scss";
+
+.main-page {
+  @include flex(center, center, 10px);
+  flex-direction: column;
+}
+
+.info {
+  &-name {
+    color: $color-main;
+    font-size: 60px;
+  }
+
+  &-position {
+    color: $color-black;
+    font-size: 80px;
+  }
+
+  &-menu {
+    margin: 40px 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 50px;
+    column-gap: 100px;
+
+    &__button {
+      @include button-light;
+
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .info {
+    &-name {
+      font-size: 30px;
+    }
+    &-position {
+      font-size: 40px;
+    }
+
+    &-menu {
+      margin: 20px 0;
+
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+      row-gap: 25px;
+      column-gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .info {
+    &-name {
+      font-size: 30px;
+    }
+    &-position {
+      font-size: 40px;
+    }
+
+    &-menu {
+      margin: 20px 0;
+
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(6, auto);
+      row-gap: 15px;
+    }
+  }
+}

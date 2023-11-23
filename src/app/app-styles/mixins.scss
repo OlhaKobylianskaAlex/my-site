@@ -1,0 +1,62 @@
+@import "../app-styles/variables.scss";
+
+@mixin flex($content: center, $align: center, $gap: 0) {
+  display: flex;
+  justify-content: $content;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin button-black {
+  height: 40px;
+  width: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $buttons-black;
+  color: $color-light;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  @media (max-width: 576px) {
+    height: 60px;
+    width: 150px;
+  }
+}
+
+@mixin button-light {
+  height: 80px;
+  width: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $buttons-light;
+  color: $color-black;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  @media (max-width: 576px) {
+    width: 400px;
+  }
+}
+
+@mixin icon-black {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+
+  @media (max-width: 576px) {
+    height: 40px;
+    width: 40px;
+  }
+}
