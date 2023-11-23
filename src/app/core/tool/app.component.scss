@@ -1,0 +1,27 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../../assets/images/bg.png") center/cover;
+
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+.header {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 80px;
+
+    img {
+      height: 100%;
+    }
+  }
+}
