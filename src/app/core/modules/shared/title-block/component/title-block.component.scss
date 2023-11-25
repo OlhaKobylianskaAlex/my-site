@@ -1,0 +1,16 @@
+@import "../../../../../app-styles/variables.scss";
+@import "../../../../../app-styles/mixins.scss";
+
+.card {
+  @include flex(center, center, 0);
+
+  height: 50px;
+  width: 150px;
+  padding-bottom: 5px;
+
+  background-color: $buttons-light;
+  border-radius: 4px;
+
+  color: $color-black;
+  font-size: 25px;
+}

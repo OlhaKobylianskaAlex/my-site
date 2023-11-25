@@ -1,2 +1,6 @@
 @import "../../../../../app-styles/variables.scss";
 @import "../../../../../app-styles/mixins.scss";
+
+.card {
+  @include flex(flex-start, flex-start, 20%);
+}

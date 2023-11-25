@@ -30,7 +30,10 @@ main {
     @include flex(space-between, center, 20px);
 
     &-item {
-      &--curcle {
+      &--icons {
+        @include flex(space-between, center, 20px);
+      }
+      &-curcle {
         @include icon-black;
 
         img {
@@ -62,8 +65,15 @@ main {
       overflow: scroll;
     }
   }
-
   .header {
+    &__logo {
+      align-self: flex-start;
+    }
+
+    &__menu {
+      flex-direction: column-reverse;
+    }
+
     &__button {
       font-size: 25px;
     }

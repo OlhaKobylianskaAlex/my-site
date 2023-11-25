@@ -1,0 +1,34 @@
+@import "../../../../../app-styles/variables.scss";
+@import "../../../../../app-styles/mixins.scss";
+
+.button {
+  @include flex(flex-start, center, 0);
+  cursor: pointer;
+
+  &__arrow-part {
+    @include flex(center, center, 0);
+
+    height: 50px;
+    width: 35px;
+    padding: 10px;
+
+    background-color: $buttons-light;
+    border-radius: 4px 0 0 4px;
+
+    color: $color-black;
+  }
+
+  &__info-part {
+    @include flex(center, center, 0);
+
+    height: 50px;
+    width: 88px;
+    padding: 10px;
+
+    background-color: $buttons-black;
+    border-radius: 0 4px 4px 0;
+
+    color: $color-light;
+    font-size: 20px;
+  }
+}
